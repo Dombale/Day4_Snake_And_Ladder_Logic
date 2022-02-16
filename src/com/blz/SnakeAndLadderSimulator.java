@@ -33,7 +33,9 @@ public class SnakeAndLadderSimulator {
 			}
 
 			}
-
+			// if position beyond 100, then it remains stay on same position
+			if (position > 100)
+				position = position - diceRoll;
 		}
 		System.out.println("The position is: " + position);
 	}
